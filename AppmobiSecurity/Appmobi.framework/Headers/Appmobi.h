@@ -16,6 +16,7 @@
 #import "AME2EE.h"
 #import "AME2EEMessage.h"
 #import "AMAnalytics.h"
+#import "AppmobiProtection.h"
 
 #define kAppmobiInitialize @"appMobi.initialize"
 
@@ -31,7 +32,6 @@
 #define kRefreshPushNotificationsCB @"appMobi.notification.push.refresh"
 #define kSendPushNotificationCB @"appMobi.notification.push.send"
 #define kSendPushUserPasswordCB @"appMobi.notification.push.sendpassword"
-
 #define kSecureDataSaveCB @"appMobi.securedata.save"
 #define kSecureDataReadCB @"appMobi.securedata.read"
 #define kSecureDataSyncCB @"appMobi.securedata.sync"
@@ -63,6 +63,7 @@ typedef enum oauthProviders
 @property (nonatomic, strong) AMSecureController *cloudSecure;
 @property (nonatomic, strong) AME2EE *amE2EE;
 @property (nonatomic, strong) AMAnalytics *analytics;
+@property (nonatomic, strong) AppmobiProtection *protection;
 
 //Appmobi Initialize method returning Appmobi class object
 +(Appmobi*) INIT;
@@ -81,7 +82,4 @@ typedef enum oauthProviders
 -(void) setAMEventDelegate:(id)delegate;
 //Encrypt/Decrypt custom path
 -(void) encryptCustomPath:(BOOL)isEncrypt withPath:(NSString*)path;
-//Check protection status
--(void) checkProtectionStatus;
-
 @end
