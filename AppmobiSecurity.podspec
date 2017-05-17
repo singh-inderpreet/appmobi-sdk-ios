@@ -12,7 +12,7 @@ Appmobi provides real time monitoring of in app activity using a set of predefin
   s.homepage         = 'https://appmobi.com'
 
   s.license          = { :type => 'Appmobi License', :file => 'LICENSE' }
-  s.author           = { 'Appmobi' => 'cocoapod@appmobi.com' }
+  s.author           = { 'Appmobi' => ‘prabhjot@aspirevc.com' }
   s.source           = { :git => 'https://github.com/appMobiGithub/appmobi-sdk-ios.git', :tag => '1.1.6' }
 
   s.ios.deployment_target = '8.0'
